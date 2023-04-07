@@ -83,3 +83,143 @@ button {
 .social-link:hover .social-svg .icon-hover {
   opacity: 1;
 }
+
+.box {
+  margin-top: 50px;
+  margin-bottom: 300px;
+}
+
+.gradient-line {
+  height: 2px;
+  width: 700px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #000;
+  background-image: linear-gradient(to right, #f00, #00f);
+  border-radius: 2px;
+}
+
+.border {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 2px;
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent 50%,
+      #fff 50%,
+      #fff 100%
+    ),
+    linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background-size: 14px 3px, 100% 3px;
+  border: none;
+}
+
+.border::after {
+  content: "";
+  position: absolute;
+  left: 75%;
+  top: 99px;
+  display: block;
+  width: 196px;
+  height: 2px;
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent 50%,
+      #fff 50%,
+      #fff 100%
+    ),
+    linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background-size: 14px 3px, 100% 3px;
+  border: none;
+  transform: rotate(90deg);
+}
+
+.border::before {
+  content: "";
+  position: absolute;
+  right: 76%;
+  top: 94px;
+  display: block;
+  width: 192px;
+  height: 2px;
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent 50%,
+      #fff 50%,
+      #fff 100%
+    ),
+    linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background-size: 14px 3px, 100% 3px;
+  border: none;
+  transform: rotate(270deg);
+}
+
+.border-bottom {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 2px;
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent 50%,
+      #fff 50%,
+      #fff 100%
+    ),
+    linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background-size: 14px 3px, 100% 3px;
+  border: none;
+}
+
+.text {
+  padding: 40px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 300px;
+}
+
+.oval {
+  position: relative;
+  width: 28px;
+  height: 13px;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  border-radius: 50%;
+}
+
+.oval::before,
+.oval::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border-radius: 50%;
+}
+
+.oval::before {
+  width: 24px;
+  height: 10px;
+  background: #fff;
+}
+
+.oval::after {
+  width: 14px;
+  height: 5px;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
+
+/* .oval {
+  width: 28px;
+  height: 13px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  box-shadow: inset 0px 0px 0px 100vw #fff;
+} */
